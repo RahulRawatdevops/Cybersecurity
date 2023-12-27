@@ -18,7 +18,7 @@ jobs:
 
         - name: Run Your Task
           run: |
-              echo "running scheduled task..."
+              echo "running scheduled task.."
               npm install
               npm test
               npm run build
