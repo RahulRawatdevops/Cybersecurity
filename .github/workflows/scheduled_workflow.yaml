@@ -1,0 +1,25 @@
+name: Scheduled Workflow
+
+on:
+  schedule:
+    - cron: '0 0 * * *'
+
+
+jobs:
+  run-task:
+    run-on: ubuntu-latest
+
+
+
+    steps:
+        - name: Checkout Repository
+          uses: actions/checkout@v2
+
+
+        - name: Run Your Task
+          run: |
+              echo "running scheduled task..."
+              npm install
+              npm test
+              npm run build
+              
