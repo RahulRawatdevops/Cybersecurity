@@ -6,8 +6,7 @@ on:
 
 
 jobs:
-  run-task:
-    run-on: ubuntu-latest
+   run-on: ubuntu-latest
 
 
 
